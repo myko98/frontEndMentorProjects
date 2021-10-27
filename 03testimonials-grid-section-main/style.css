@@ -16,7 +16,7 @@ body {
   background-color: var(--light-gray-blue);
   margin: 0 0 0 0;
   font-size: 13px;
-  color: var(--white)
+  color: var(--white);
 }
 
 .grid {
@@ -25,9 +25,9 @@ body {
   width: 1000px;
   margin: 20vh auto;
   gap: 2rem;
-  grid-template-areas: 
-  "dan dan jon kira"
-  "jea pat pat kira";
+  grid-template-areas:
+    "dan dan jon kira"
+    "jea pat pat kira";
 }
 
 /* General Card Properties */
@@ -42,15 +42,14 @@ body {
   border-radius: 50%;
   height: 30px;
   width: auto;
-  border: 2px solid var(--light-gray)
+  border: 2px solid var(--light-gray);
 }
 .profile {
   display: flex;
-  padding-bottom: 20px
+  padding-bottom: 20px;
 }
 
 .name {
-
   margin-left: 10px;
 }
 
@@ -67,20 +66,24 @@ body {
 .review {
   opacity: 70%;
 
-  margin-bottom: -10px
+  margin-bottom: -10px;
 }
 .card {
   padding: 20px;
   border-radius: 7px;
-  -webkit-box-shadow: 18px 18px 15px -6px rgba(0,0,0,0.17); 
-box-shadow: 18px 18px 15px -6px rgba(0,0,0,0.17);
+  -webkit-box-shadow: 18px 18px 15px -6px rgba(0, 0, 0, 0.17);
+  box-shadow: 18px 18px 15px -6px rgba(0, 0, 0, 0.17);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.02);
 }
 
 .bold-text {
   font-weight: 600;
-  font-size: 20px
+  font-size: 20px;
 }
-
 
 /* individual cards */
 .daniel {
@@ -93,7 +96,7 @@ box-shadow: 18px 18px 15px -6px rgba(0,0,0,0.17);
 
 .jonathan {
   background-color: var(--gray-blue);
-  grid-area: jon
+  grid-area: jon;
 }
 
 #text-in-front {
@@ -106,7 +109,7 @@ box-shadow: 18px 18px 15px -6px rgba(0,0,0,0.17);
   color: var(--gray-blue);
   /* grid-column: 4 / 5; */
   /* grid-row: 1 / 3 */
-  grid-area: kira
+  grid-area: kira;
 }
 
 .jeanette {
@@ -131,13 +134,11 @@ p {
     grid-template-columns: 1fr;
     width: 350px;
     margin: 5vh auto;
-    grid-template-areas: 
-    "dan"
-    "jon"
-    "jea"
-    "pat"
-    "kira"
-    ;
-
+    grid-template-areas:
+      "dan"
+      "jon"
+      "jea"
+      "pat"
+      "kira";
   }
 }
