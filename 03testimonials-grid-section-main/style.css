@@ -22,7 +22,7 @@ body {
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  width: 1000px;
+  width: 1200px;
   margin: 20vh auto;
   gap: 2rem;
   grid-template-areas:
