@@ -1,0 +1,48 @@
+@font-face {
+	font-family: 'outfit';
+	font-weight: 400;
+	src: url('/assets/fonts/Outfit-Regular.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'outfit-bold';
+	font-weight: 700;
+	src: url('/assets/fonts/Outfit-Bold.woff2') format('woff2');
+}
+
+html,
+body {
+	height: 100%; /* Ensure the body and html take up the full height */
+	margin: 0; /* Remove default margin */
+	display: flex; /* Use flexbox on body */
+	justify-content: center; /* Center items horizontally */
+	align-items: center; /* Center items vertically */
+	background-color: hsl(212, 45%, 89%);
+	font-family: 'outfit';
+	font-size: 14px;
+}
+
+b {
+	font-family: 'outfit-bold';
+	font-weight: 700;
+}
+.container {
+	padding: 10px;
+	border-radius: 20px;
+	background-color: hsl(0, 0%, 100%);
+	display: flex;
+	flex-direction: column;
+	max-width: 200px; /* Ensure the container fits the content */
+	max-height: fit-content;
+	margin: auto auto;
+	text-align: center;
+}
+
+.container > div {
+	margin-bottom: 10px;
+}
+
+.container > img {
+	border-radius: 20px;
+	margin-bottom: 20px;
+}
